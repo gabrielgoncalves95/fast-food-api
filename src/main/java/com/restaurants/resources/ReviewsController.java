@@ -1,7 +1,7 @@
-package com.restaurants.demo.com.restaurants.demo.resources;
+package com.restaurants.resources;
 
-import com.restaurants.demo.com.restaurants.demo.resources.models.Menu;
-import com.restaurants.demo.com.restaurants.demo.resources.repositories.MenuRepository;
+import com.restaurants.resources.models.Reviews;
+import com.restaurants.resources.repositories.ReviewsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 
-@RequestMapping("/menu")
+@RequestMapping("/reviews")
 @RestController
-public class MenuController {
+public class ReviewsController {
     @Autowired
-    private MenuRepository repository;
+    private ReviewsRepository repository;
 
     @RequestMapping(value = "/all", method = RequestMethod.GET)
-    public List<Menu> getAllOptions() {
+    public List<Reviews> getAllOptions() {
         return repository.findAll();
     }
 }

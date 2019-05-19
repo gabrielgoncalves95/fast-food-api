@@ -1,4 +1,4 @@
-package com.restaurants.demo;
+package com.restaurants;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

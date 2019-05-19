@@ -1,6 +1,6 @@
-package com.restaurants.demo.com.restaurants.demo.resources.repositories;
+package com.restaurants.resources.repositories;
 
-import com.restaurants.demo.com.restaurants.demo.resources.models.Menu;
+import com.restaurants.resources.models.Menu;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 

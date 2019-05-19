@@ -1,4 +1,4 @@
-package com.restaurants.demo.com.restaurants.demo.resources.models;
+package com.restaurants.resources.models;
 
 import lombok.Getter;
 import lombok.Setter;
